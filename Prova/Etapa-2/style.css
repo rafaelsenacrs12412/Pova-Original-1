@@ -1,0 +1,73 @@
+body{
+    background: #f4f1ec;
+    margin: 0%;
+    font-family: "Segoe UI", Roboto, Helvetica, Arial, sans-serif, 16px;
+}
+
+section{
+    background:#ffffff;
+    border: 1px solid #e3ded5;
+    border-radius: 10px;
+    padding-left: 12px ;
+}
+
+.topo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    color: #ffffff;
+    background: #253858;
+}
+
+header.p{
+    color: #6c6f86
+}
+
+footer{
+    text-align: center;
+    color: #6c6f86;
+}
+
+.cartoes {
+    display: grid;
+    gap: 16px;
+    max-width: 90%;
+    min-height: 700px;
+    margin: 0 auto;
+    padding: 20px;
+    
+
+    grid-template-areas:
+        "resumo"
+        "nova-entrega"
+        "proxima-entrega";
+}
+
+.resumo       { grid-area: resumo; }
+.nova-entrega           { grid-area: nova-entrega; }
+.proxima-entrega { grid-area: proxima-entrega; }
+
+.cartoes{
+    color: #253858;
+}
+
+.cartoes legend{
+    color: #253858;
+    font-size: 22px;
+    font-weight: bold 
+}
+
+@media (min-width: 800px) {
+
+    .cartoes {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "resumo      proxima-entrega"
+            "nova-entrega proxima-entrega";
+    }
+
+}
+

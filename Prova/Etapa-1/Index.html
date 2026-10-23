@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda De Entregas</title>
+</head>
+<body>
+    <header>
+        <h1>Agenda de Entregas</h1>
+        <p>Provas, Trabalhos e apresentações em um só lugar.</p>
+   </header>
+
+    <main> 
+        <section>
+            <h1>Resumo</h1>
+            <p>Pendentes 
+                <b>3</b> 
+            </p>
+            <p>Próxima entrega
+                <b>Matemática-28/10</b>
+            </p>
+        </section>
+
+        <section>
+            <form>
+                <fieldset>
+                <legend>Nova Entrega</legend>
+
+                <form action="/action_page.php">
+                    <label for="Matéria">Matéria:</label>
+                    <input type="text" placeholder="Ex: Matemática"></input> 
+                </form> 
+                
+                
+                <form action="/action_page.php"><br />
+                    <label for="Tipos">Tipo:</label>
+                    <select id="nova-entrega" class="campo-novaEntrega">
+                        <option value="prova">Escolha um Tipo</option> 
+                        <option value="prova">Prova</option> 
+                        <option value="trabalho">Trabalho</option>
+                        <option value="apresentacao">Apresentação</option>
+                    </select>  
+                </form> 
+
+                <form action="/action_page.php"><br />
+                    <label for="data">Data</label>
+                    <input type="date">
+                </form>
+
+
+                <form action="/action_page.php"><br />
+                <button class="adicionarFormulario"> 
+                    Adicionar
+                </button>
+            </fieldset> 
+        </section> <br />
+
+        <section>
+            <h1>Próxmias Entregas</h1>
+            <label for="mostrar-entrega">Mostrar</label>
+            <select id="proxima-entrega" class="PróximasEntregas">
+                <option value="todos">Todos</option>
+                <option value="Provas">Só Provas</option>
+                <option value="apresentações">Só Trabalhos</option>
+                <option value="Apresentações">Só Apresentações</option>
+            </select>
+            <ul>
+                <li>20/10 <br />
+                    <b>Português</b> Trabalho
+                        <br />
+                    <button>Reabrir</button> <button>Apagar</button>
+                </li>
+
+                <li>28/10 <br />
+                    <b>Matemática</b> Prova
+                        <br />
+                    <button>Feita</button> <button>Apagar</button>
+                </li>
+
+                <li>30/10 <br />
+                    <b>Inglês</b> Apresentação
+                        <br />
+                    <button>Reabrir</button> <button>Apagar</button>
+                </li>
+                <li>04/11 <br />
+                    <b>História</b> Trabalho
+                        <br />
+                    <button>Feita</button> <button>Apagar</button>
+                </li>
+                
+            </ul>
+        </section> <br />
+        </main>
+
+
+        <Footer>
+            Feito Por: Rafael Barcelos Carvalho
+        </Footer>
+</body>
+</html>

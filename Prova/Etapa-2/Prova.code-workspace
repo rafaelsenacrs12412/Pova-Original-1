@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "../../../Downloads/enunciados-etapas-exercicio/alunos"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Prova"
+	}
+}
